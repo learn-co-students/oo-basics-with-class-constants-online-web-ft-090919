@@ -1,3 +1,5 @@
+require "pry"
+
 describe 'Book' do
  describe 'GENRES' do
     it 'keeps track of all genres' do
@@ -5,6 +7,7 @@ describe 'Book' do
       genres.each_with_index do |genre, i|
         book = Book.new("Book_#{i}")
         book.genre = genre
+        # binding.pry
       end
 
       genres.each do |genre|
