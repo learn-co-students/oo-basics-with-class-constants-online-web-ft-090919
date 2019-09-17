@@ -134,7 +134,7 @@ class Book
   # create the writer for genre and add the logic for the class constant
   def genre=(genre)
     @genre = genre
-    GENRES << genre 
+    GENRES << genre
   end
 end
 ```
